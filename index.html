@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RMotivate – iOS App Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
+  <script>
+    function toggleDarkMode() {
+      document.documentElement.classList.toggle('dark');
+    }
+  </script>
+</head>
+<body class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-100 font-sans transition-colors duration-300">
+
+  <!-- Header -->
+  <header class="bg-white dark:bg-gray-800 shadow-md p-6">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">RMotivate</h1>
+      <nav class="space-x-4">
+        <a href="#apps" class="text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400">Apps</a>
+        <a href="#about" class="text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400">About</a>
+        <a href="#contact" class="text-gray-600 dark:text-gray-300 hover:text-indigo-500 dark:hover:text-indigo-400">Contact</a>
+      </nav>
+      <button onclick="toggleDarkMode()" class="ml-4 px-4 py-2 bg-indigo-500 text-white rounded hover:bg-indigo-600">
+        Toggle Dark / Light Mode
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-indigo-600 dark:bg-indigo-900 text-white py-16 text-center">
+    <h2 class="text-4xl font-bold mb-4">Showcasing My iOS Creations</h2>
+    <p class="text-lg">Explore the apps I've built as a passionate Apple Developer.</p>
+  </section>
+
+  <!-- Apps Showcase -->
+  <section id="apps" class="py-16 max-w-6xl mx-auto px-4">
+    <h3 class="text-3xl font-bold mb-10 text-center dark:text-white">My Apps</h3>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <!-- Example App -->
+      <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden">
+        <img src="GuessGame.jpg" alt="App Screenshot" class="w-full h-48 object-cover" />
+        <div class="p-6">
+          <h4 class="text-xl font-semibold mb-2 dark:text-white">You Guess (Trivia)</h4>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Guessing Game, You Guess is a simple guessing game that consist of world's most common question.</p>
+          <a href="https://apps.apple.com/us/app/you-guess-trivia/id6742357611" target="_blank" class="text-indigo-600 dark:text-indigo-400 font-medium hover:underline">View on App Store →</a>
+        </div>
+      </div>
+
+      <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden">
+        <img src="Parcel Calculator 1.png" alt="App Screenshot" class="w-full h-48 object-cover" />
+        <div class="p-6">
+          <h4 class="text-xl font-semibold mb-2 dark:text-white">Parcel Calculator - AE</h4>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">This app will tell you how much you are earning per second in Atlas Earth with all the accumulations that you have with your parcels and with the ad boost and the passport badge boost.</p>
+          <a href="https://apps.apple.com/us/app/parcel-calculator-ae/id6742125330" target="_blank" class="text-indigo-600 dark:text-indigo-400 font-medium hover:underline">View on App Store →</a>
+        </div>
+      </div>
+
+      <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden">
+        <img src="HITTHEBALL.png" alt="App Screenshot" class="w-full h-48 object-cover" />
+        <div class="p-6">
+          <h4 class="text-xl font-semibold mb-2 dark:text-white">Hit the RC Ball</h4>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Perfect for short bursts of fun or long sessions of skill-building. Compete with yourself and stay hooked!</p>
+          <a href="https://apps.apple.com/us/app/hit-the-rc-ball/id6744978477" target="_blank" class="text-indigo-600 dark:text-indigo-400 font-medium hover:underline">View on App Store →</a>
+        </div>
+      </div>
+
+      <!-- Repeat for other apps -->
+      <!-- Add more apps here in the same structure -->
+
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-white dark:bg-gray-800 py-16 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-4 dark:text-white">About Me</h3>
+      <p class="text-gray-600 dark:text-gray-300">I'm Rovillo Ceazar Gurrea, an iOS developer focused on building clean, user-friendly, and impactful apps using Swift and SwiftUI. I enjoy turning ideas into tools that users love and use every day.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-indigo-700 dark:bg-indigo-900 text-white py-16">
+    <div class="max-w-3xl mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-4">Let's Connect</h3>
+      <p class="mb-6">Feel free to reach out for collaborations, ideas, or feedback.</p>
+      <div class="space-x-4">
+        <a href="mailto:your@email.com" class="underline">Email</a>
+        <a href="https://twitter.com/yourhandle" target="_blank" class="underline">Twitter</a>
+        <a href="https://github.com/yourgithub" target="_blank" class="underline">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 dark:bg-gray-900 text-gray-300 dark:text-gray-300 py-6 text-center text-sm">
+    &copy; 2025 RMotivate. All rights reserved.
+  </footer>
+
+</body>
+</html>
